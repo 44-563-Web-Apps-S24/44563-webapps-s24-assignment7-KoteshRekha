@@ -40,10 +40,11 @@
             function makeNewDiv(){     
 		
 		let element = document.createElement("div")
-		element.innerHTML = "an item after 3"
-		element.style.color = "orange"
-
+		let val = document.getElementsByClassName("divlist").value;
+		var ele= document.getElementById("textInput").value;
+		console.log(ele);
 		
+		element.innerHTML = ele;
 		let container = document.getElementById('target')
 		container.appendChild(element)
 		
